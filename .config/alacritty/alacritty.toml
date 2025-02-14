@@ -1,0 +1,31 @@
+[general]
+import = [ "~/.config/alacritty/Kanagawa-dragon.toml" ]
+
+[font]
+size = 13.0
+offset.x = 0
+offset.y = 5
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[window]
+dynamic_padding = true
+opacity = 1
+
+[window.padding]
+x = 5
+y = 0
