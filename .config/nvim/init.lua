@@ -1,11 +1,11 @@
-local keymap = vim.keymap.set
-local add = MiniDeps.add
-local opt = vim.opt
-
 if not vim.loop.fs_stat(vim.fn.stdpath('data') .. '/site/pack/deps/start/mini.nvim') then
   vim.fn.system({ 'git', 'clone', '--filter=blob:none', 'https://github.com/echasnovski/mini.nvim', vim.fn.stdpath('data') .. '/site/pack/deps/start/mini.nvim' })
   vim.cmd('packadd mini.nvim | helptags ALL') end
 require('mini.deps').setup({ path = { package = vim.fn.stdpath('data') .. '/site/' } })
+
+local keymap = vim.keymap.set
+local add = MiniDeps.add
+local opt = vim.opt
 
 for _, mod in ipairs({ 'icons', 'pairs', 'statusline', 'extra', 'pick', 'bracketed' }) do
   require('mini.' .. mod).setup() end
